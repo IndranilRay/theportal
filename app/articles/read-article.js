@@ -9,10 +9,10 @@ $(document).ready(function(){
 function showArticles(){
     $.getJSON("http://localhost/theportal/api/articles/read.php", function (data) {
 
-        // html for listing products
+        // html for listing articles
         var read_articles_html="";
 
-        // when clicked, it will load the create product form
+        // when clicked, it will load the create articles form
         read_articles_html+="<div id='create-article' class='btn btn-primary pull-right m-b-15px create-article-button'>";
         read_articles_html+="<span class='glyphicon glyphicon-plus'></span> Create Article";
         read_articles_html+="</div>";
@@ -42,7 +42,7 @@ function showArticles(){
 
             // 'action' buttons
             read_articles_html+="<td>";
-            // read one product button
+            // read one article button
             read_articles_html+="<button class='btn btn-primary m-r-10px read-one-article-button' data-id='" + val.article_id + "'>";
             read_articles_html+="<span class='glyphicon glyphicon-eye-open'></span> Read";
             read_articles_html+="</button>";

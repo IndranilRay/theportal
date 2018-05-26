@@ -9,4 +9,7 @@ Portal management system built usin open source technology stack.This is develop
 4) Composer Version: 1.6.5(Installed per project basis)
 5) Followed PSR-0
 
+SetUp Instruction:
+1) To create database schema export sql/api_portal_system.sql on your localhost
+2) navigate to http://locahost/theportal.
 
