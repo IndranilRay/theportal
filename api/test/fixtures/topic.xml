@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <database name="api_portal_system">
+        <table_data name="topic">
+            <row>
+                <field name="topic_id">1</field>
+                <field name="topic_title">Buisness</field>
+                <field name="created_date">2018-25-04</field>
+            </row>
+            <row>
+                <field name="topic_id">2</field>
+                <field name="topic_title">Technology</field>
+                <field name="created_date">2018-28-03</field>
+            </row>
+            <row>
+                <field name="topic_id">3</field>
+                <field name="topic_title">Travel</field>
+                <field name="created_date">2018-15-05</field>
+            </row>
+        </table_data>
+    </database>
+</mysqldump>

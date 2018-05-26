@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <database name="api_portal_system">
+        <table_data name="article">
+            <row>
+                <field name="article_id">1</field>
+                <field name="article_title">Wallmart acquire Flipkart</field>
+                <field name="article_author">Neal</field>
+                <field name="article_text">Acquisitions worth $16 billion</field>
+                <field name="topic_id">1</field>
+            </row>
+            <row>
+                <field name="article_id">2</field>
+                <field name="article_title">UK commons Sue Google</field>
+                <field name="article_author">John Doe</field>
+                <field name="article_text">Personal data misusage sue Google</field>
+                <field name="topic_id">1</field>
+            </row>
+            <row>
+                <field name="article_id">3</field>
+                <field name="article_title">Apple Launches iPhoneX</field>
+                <field name="article_author">Smith</field>
+                <field name="article_text">Apple lauched another iPhone.</field>
+                <field name="topic_id">2</field>
+            </row>
+            <row>
+                <field name="article_id">4</field>
+                <field name="article_title">Gods own country 'Kerala'</field>
+                <field name="article_author">Sabyasachi</field>
+                <field name="article_text">Enjoy this summeer in Gods own land.</field>
+                <field name="topic_id">3</field>
+            </row>
+        </table_data>
+    </database>
+</mysqldump>
