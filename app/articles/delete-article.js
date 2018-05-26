@@ -27,7 +27,7 @@ $(document).ready(function(){
 
                     // send delete request to api / remote server
                     $.ajax({
-                        url: "http://localhost/PortalAccessManagement/api/articles/delete.php",
+                        url: "http://localhost/theportal/api/articles/delete.php",
                         type : "POST",
                         dataType : 'json',
                         data : JSON.stringify({ id: article_id }),

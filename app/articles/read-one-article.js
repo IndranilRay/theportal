@@ -10,7 +10,7 @@ $(document).ready(function(){
         var id = $(this).attr('data-id');
 
         // read article record based on given ID
-        $.getJSON("http://localhost/PortalAccessManagement/api/articles/read_one.php?id=" + id, function(data){
+        $.getJSON("http://localhost/theportal/api/articles/read_one.php?id=" + id, function(data){
             // read article button will be here
             // start html
             var read_one_article_html="";

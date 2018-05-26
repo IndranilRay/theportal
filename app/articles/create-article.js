@@ -6,7 +6,7 @@ $(document).ready(function(){
     // show html form when 'create article' button was clicked
     $(document).on('click', '.create-article-button', function(){
         // load list of topics
-        $.getJSON("http://localhost/PortalAccessManagement/api/topics/read.php", function(data){
+        $.getJSON("http://localhost/theportal/api/topics/read.php", function(data){
             // build topics option html
             // loop through returned list of data
             var topics_options_html="";
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
         // submit form data to api
         $.ajax({
-            url: "http://localhost/PortalAccessManagement/api/articles/create.php",
+            url: "http://localhost/theportal/api/articles/create.php",
             type : "POST",
             contentType : 'application/json',
             data : form_data,

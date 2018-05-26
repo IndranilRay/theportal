@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     function showTopics(){
         // get list of products from the API
-        $.getJSON("http://localhost/PortalAccessManagement/api/topics/read.php", function(data){
+        $.getJSON("http://localhost/theportal/api/topics/read.php", function(data){
 
             // html for listing products
             var read_topics_html="";

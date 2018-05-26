@@ -7,7 +7,7 @@ $(document).ready(function(){
 });
 
 function showArticles(){
-    $.getJSON("http://localhost/PortalAccessManagement/api/articles/read.php", function (data) {
+    $.getJSON("http://localhost/theportal/api/articles/read.php", function (data) {
 
         // html for listing products
         var read_articles_html="";
