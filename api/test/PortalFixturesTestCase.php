@@ -11,7 +11,7 @@ require_once 'FixtureTestCase.php';
 class PortalFixturesTestCase extends FixtureTestCase
 {
     public $fixtures = array(
-        'topics',
+        'topic',
     );
 
     function testReadDatabase() {
@@ -19,19 +19,19 @@ class PortalFixturesTestCase extends FixtureTestCase
         $conn = $this->getConnection()->getConnection();
 
         // fixtures auto loaded, let's read some data
-        $query = $conn->query('SELECT * FROM topics');
+        $query = $conn->query('SELECT * FROM topic');
         $results = $query->fetchAll(PDO::FETCH_COLUMN);
         $this->assertEquals(2, count($results));
 
         // now delete them
         $conn->query('TRUNCATE topics');
 
-        $query = $conn->query('SELECT * FROM topics');
+        $query = $conn->query('SELECT * FROM topic');
         $results = $query->fetchAll(PDO::FETCH_COLUMN);
         $this->assertEquals(0, count($results));
 
         // now reload them
-        $ds = $this->getDataSet(array('topics'));
+        $ds = $this->getDataSet(array('topic'));
         $this->loadDataSet($ds);
 
         $query = $conn->query('SELECT * FROM topics');

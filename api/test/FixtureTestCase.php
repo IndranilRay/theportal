@@ -10,7 +10,7 @@ class FixtureTestCase extends TestCase
 
     private $conn = null;
     public $fixtures = array(
-        'topics',
+        'topic',
     );
 
     public function setUp()
